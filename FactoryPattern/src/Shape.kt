@@ -1,0 +1,4 @@
+interface Shape
+{
+    fun getShape()
+}
