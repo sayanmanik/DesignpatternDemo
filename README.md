@@ -1,6 +1,6 @@
 # DesignpatternDemo
 
-Here I have discussed about Strategy Design pattern. In this application, I have various types of ducks like 
+Here I have discussed about **Strategy Design Pattern**. In this application, I have various types of ducks like 
 - Mallard duck
 - Red head duck
 - Rubber duck
