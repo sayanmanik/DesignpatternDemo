@@ -9,3 +9,8 @@ So Here I have kept the variable features in the ducks aside. **FlyBehaviour**, 
 Duck class has two methods named **display()** and **swim()** which are fixed for all ducks. To get the fly functions and quack functions, we have **performFly()** and **performQuack()** respectively. 
 **FlyBehaviour** and **QuackBehaviour** are in HAS-A relation in Duck.
 Duck has multiple variations.
+
+### OO Principles
+- Encapsulate what varies
+- Favor composition over inhritance
+- Program to interfaces, not implementations
