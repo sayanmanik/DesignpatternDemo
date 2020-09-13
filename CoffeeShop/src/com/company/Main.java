@@ -10,6 +10,7 @@ public class Main {
 	// write your code here
 
         Beverage beverage = new DarkRoast();
+        beverage.setSize(Beverage.LARGE);
         Beverage mocha1 = new Mocha(beverage);
         Beverage mocha2 = new Mocha(mocha1);
 

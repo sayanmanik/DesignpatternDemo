@@ -19,4 +19,14 @@ public class Milk extends CondimentDecorator
     public double getCost() {
         return beverage.getCost() + 2.05;
     }
+
+    @Override
+    public void setSize(int size) {
+
+    }
+
+    @Override
+    public int getSize() {
+        return 0;
+    }
 }

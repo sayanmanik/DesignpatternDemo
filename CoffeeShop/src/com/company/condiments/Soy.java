@@ -19,4 +19,14 @@ public class Soy extends CondimentDecorator
     public double getCost() {
         return beverage.getCost() + 3.55;
     }
+
+    @Override
+    public void setSize(int size) {
+
+    }
+
+    @Override
+    public int getSize() {
+        return 0;
+    }
 }

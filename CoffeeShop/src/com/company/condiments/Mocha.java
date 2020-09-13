@@ -16,6 +16,26 @@ public class Mocha extends CondimentDecorator
 
     @Override
     public double getCost() {
-        return beverage.getCost() + 2.5;
+
+        double cost = beverage.getCost();
+        if(getSize() == beverage.LARGE){
+            cost += 3.5;
+        }else if(getSize() == beverage.MEDIUM){
+            cost += 1.5;
+        }else if(getSize() == beverage.SMALL){
+            cost += 2.5;
+        }
+
+        return cost;
+    }
+
+    @Override
+    public void setSize(int size) {
+
+    }
+
+    @Override
+    public int getSize() {
+        return beverage.getSize();
     }
 }

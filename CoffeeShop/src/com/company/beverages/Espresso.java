@@ -16,4 +16,14 @@ public class Espresso extends Beverage
     public double getCost() {
         return 1.75;
     }
+
+    @Override
+    public void setSize(int size) {
+
+    }
+
+    @Override
+    public int getSize() {
+        return 0;
+    }
 }
