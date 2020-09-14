@@ -1,24 +1,33 @@
 package com.company.pizzastore;
 
-import com.company.pizza.NYStyleCheesePizza;
-import com.company.pizza.Pizza;
+import com.company.pizza.*;
+import com.company.pizzaIngredient.NYPizzaIngredientFactory;
+import com.company.pizzaIngredient.PizzaIngredientFactory;
 
 public class NYStylePizzaStore extends PizzaStore{
 
+    Pizza pizza=null;
+    PizzaIngredientFactory ingredientFactory =
+            new NYPizzaIngredientFactory();
 
     @Override
     public Pizza createPizza(String type) {
         if(type.equals("cheese")){
-            return new NYStyleCheesePizza();
+            pizza = new CheesePizza(ingredientFactory);
+            pizza.setName("New York Style Cheese Pizza");
         }
-//        else if(type.equals("veggie")){
-//            return new NYStyleVeggiePizza();
-//        }else if(type.equals("clam")){
-//            return new NYStyleClamPizza();
-//        }else if(type.equals("pepperoni")){
-//            return new NYStylePepporoniPizza();
-//        }
+        else if(type.equals("veggie")){
+            pizza = new VeggiePizza(ingredientFactory);
+            pizza.setName("New York Style Veggie Pizza");
 
-        return null;
+        }else if(type.equals("clam")){
+            pizza = new ClamPizza(ingredientFactory);
+            pizza.setName("New York Style Clam Pizza");
+        }else if(type.equals("pepperoni")){
+           pizza = new PepperoniPizza(ingredientFactory);
+           pizza.setName("New York Style Pepperoni Pizza");
+        }
+
+        return pizza;
     }
 }
