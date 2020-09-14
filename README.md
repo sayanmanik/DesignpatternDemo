@@ -13,5 +13,5 @@
 **Decoration Pattern**
 - Classes should be open for extension but closed for modification
 
-**Factory Pattern**
+**Factory Pattern & Abstract Factory Pattern**
 - Depend on abstraction. Don't depend on concrete classes
